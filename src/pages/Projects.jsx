@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from '../css/Projects.module.css';
 import textToSpeech from '../assets/textToSpeech.png';
-import Traveltrek from '../assets/Traveltrek.jpeg';
-import BusInOut from '../assets/BusInOut.png'
+import Traveltrek from '../assets/TravelTrek.jpeg';
+import BusInOut from '../assets/busInOut.png'
 const ProjectCard = () => {
   const projects = [
     {

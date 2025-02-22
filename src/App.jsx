@@ -7,10 +7,10 @@ import AboutMe from './pages/AboutMe';
 import ContactUs from './pages/Contact';
 import ProjectCard from './pages/Projects';
 import { BrowserRouter as Router,Routes,Route,Link,NavLink } from "react-router-dom";
-import MainPage from './pages/MainPage';
+
 // import ContactSample from './pages/email';
 function App() {
-  const smoothScrollToSection = (sectionId) => {
+  const smoothScrollToSection = (sectionId) => { 
     document.getElementById(sectionId)?.scrollIntoView({
       behavior: "smooth",
     });
@@ -19,6 +19,7 @@ function App() {
     <>
       <Router>
       <Header/>
+      {/* <Email/> */}
       {/* <AboutMe/>
       <ProjectCard/> */}
 

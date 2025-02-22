@@ -1,11 +1,7 @@
-// App.js
+
 import React from 'react';
 import styles from '../css/home.module.css';
-import avatar from '../assets/22A91A61F8.JPG'; // Replace with the actual path to the avatar image
-import Certifications from './certifications';
-import AboutMe from './AboutMe';
-import ContactUs from './Contact';
-import ProjectCard from './Projects';
+import avatar from '../assets/22A91A61F8.jpg'; 
 function Home() {
     const name = "Full Stack Developer";
     const letteredName = name.split("").map((char, index) => (
@@ -25,9 +21,6 @@ function Home() {
             <p className={styles.description}>
                 <span  className={`${styles.heading} ${styles.nameReveal}`}>{letteredName}</span> 
               </p>
-              {/* <p className={styles.currentRole}>
-                Currently designing experiences at <span className={styles.aws}>AWS</span>.
-              </p> */}
             </div>
 
         <div className={styles.Right}>
@@ -41,18 +34,7 @@ function Home() {
       </div>
       
     </div>
-    {/* <div id="about">
-        <AboutMe />
-      </div>
-      <div id="projects" style={{height:'100vh', paddingBottom:'20px'}}>
-        <ProjectCard />
-      </div>
-      <div id="certificates">
-        <Certifications />
-      </div>
-      <div id="contact">
-        <ContactUs />
-      </div> */}
+    
     </>
   );
 }

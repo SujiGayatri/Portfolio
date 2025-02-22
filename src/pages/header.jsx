@@ -1,5 +1,5 @@
   import React, { useState } from "react";
-  import styles from "../css/Header.module.css";
+  import styles from "../css/header.module.css";
   import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
   import Home from './home';
   import Certifications from './certifications';
@@ -17,9 +17,6 @@
     return (
       <div style={{height:'fit-content'}}>
       <header className={styles.header}>
-        {/* <div className={styles.logo}>
-          <span className={styles.logoText}>S</span>
-        </div> */}
         <div className={styles.menuIcon} onClick={toggleMenu}>
           <span className={styles.icon}>&#9776;</span> 
         </div>

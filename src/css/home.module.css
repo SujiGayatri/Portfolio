@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 70vh;
+  height: 70vh; 
   margin: 0;
   /* padding: 1rem; */
 }
@@ -45,12 +45,21 @@
 }
 
 .nameReveal span {
+  /* width: 80px; */
   display: inline-block;
   opacity: 0;
-  animation: letterReveal 0.001s forwards;
-  animation-delay: calc(0.1s * var(--index));
+  /* overflow: hidden;
+  text-wrap: nowrap;
+  animation: typing 2s steps(20) infinite
+  alternate-reverse; */
+  animation: letterReveal 0.001s forwards; 
+   animation-delay: calc(0.1s * var(--index));
 }
-
+@keyframes typing{
+  from{
+    width: 0ch;
+  }
+}
 @keyframes letterReveal {
   0% {
     opacity: 0;

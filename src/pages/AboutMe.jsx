@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../css/Aboutme.module.css";
+import styles from "../css/AboutMe.module.css";
 import {
   FaHtml5,
   FaCss3Alt,
