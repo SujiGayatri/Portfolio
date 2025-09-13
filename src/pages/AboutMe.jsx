@@ -61,7 +61,7 @@ function AboutMe() {
     I thrive on solving challenging problems with innovative solutions and continuously expand my knowledge to stay ahead in the dynamic world of web development.
 </p>
 <div className={styles.resumeButtonContainer}>
-  <a href="https://drive.google.com/file/d/1H6v3ymDeDMsen0rMd0gW7Pfi3eiNO73n/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+  <a href="https://drive.google.com/file/d/1CswS58AWgwfej8ZLoG2lpa6bGIbLqU_R/view?usp=sharing" target="_blank" rel="noopener noreferrer">
     <button className={styles.resumeButton}>Resume</button>
   </a>
 </div>

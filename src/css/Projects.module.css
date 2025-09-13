@@ -13,7 +13,7 @@
   }
   .title {
     margin: 0;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     height: 15%;
     /* background-color: #748cab; */
     /* font-weight: bold; */
@@ -29,8 +29,9 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     color: #f0ebd8; /* Light Beige */
-    width: 350px;
-    height: 450px;
+    width: 400px;
+    /* height: 450px; */
+    height: fit-content;
   }
   
   .card:hover {
@@ -51,7 +52,7 @@
   }
   
   .content {
-    padding: 5px 0px 0 10px;
+    padding: 10px;
     text-align: left;
   }
   
@@ -67,9 +68,9 @@
   }
   
   .description {
-    height: 80px;
+    height: 70px;
     font-size: 16px;
-    margin-bottom: 5px;
+    margin: 3px 0;
     color: #748cab; /* Soft Blue */
   }
   
@@ -162,4 +163,48 @@
       margin-bottom: 5px;
     }
   }
-  
+  /* Buttons container */
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Base button style */
+.button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Live Demo button */
+.demoButton {
+  background: linear-gradient(135deg, #0070f3, #00c6ff);
+  color: #fff;
+}
+
+.demoButton:hover {
+  background: linear-gradient(135deg, #005bb5, #009acb);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 112, 243, 0.4);
+}
+
+/* GitHub button */
+.githubButton {
+  background: #24292e;
+  color: #fff;
+}
+
+.githubButton:hover {
+  background: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(36, 41, 46, 0.5);
+}

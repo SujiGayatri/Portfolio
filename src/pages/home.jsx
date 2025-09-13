@@ -1,7 +1,9 @@
 
 import React from 'react';
 import styles from '../css/home.module.css';
-import avatar from '../assets/22A91A61F8.jpg'; 
+// import avatar from '../assets/22A91A61F8.jpg'; 
+import Suji from '../assets/Suji.jpeg';
+import SujiGayatri from '../assets/SujiGayatri.jpeg';
 function Home() {
     const name = "Full Stack Developer";
     const letteredName = name.split("").map((char, index) => (
@@ -24,7 +26,7 @@ function Home() {
             </div>
 
         <div className={styles.Right}>
-        <img src={avatar} alt="Andrea Avatar" className={styles.avatar} />
+        <img src={Suji} alt="Andrea Avatar" className={styles.avatar} />
         <div className={styles.circles}>
           <div className={styles.circle}></div>
           <div className={styles.circle}></div>
