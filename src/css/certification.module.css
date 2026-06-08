@@ -84,7 +84,7 @@
 .cardButton {
   display: inline-block;
   margin-top: 10px;
-  padding: 10px 15px;
+  padding: 10px 15px 10px;
   color: #f0ebd8;
   background-color: #3e5c76;
   border: none;
