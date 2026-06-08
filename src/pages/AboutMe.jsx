@@ -8,11 +8,11 @@ import {
   FaJava,
   FaPython,
   FaReact,
-} from "react-icons/fa"; // Import skill icons
+} from "react-icons/fa"; 
 import { SiExpress, SiMongodb } from "react-icons/si";
 
 function AboutMe() {
-  const [activeTab, setActiveTab] = useState("skills"); // State to toggle between Skills and Education
+  const [activeTab, setActiveTab] = useState("skills"); 
 
   const education = [
     {
@@ -61,7 +61,7 @@ function AboutMe() {
     I thrive on solving challenging problems with innovative solutions and continuously expand my knowledge to stay ahead in the dynamic world of web development.
 </p>
 <div className={styles.resumeButtonContainer}>
-  <a href="https://drive.google.com/file/d/1CswS58AWgwfej8ZLoG2lpa6bGIbLqU_R/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+  <a href="https://drive.google.com/file/d/1BsedDxnsHWJeiYVjEo2wdiWHTfFcKrpl/view?usp=sharing">
     <button className={styles.resumeButton}>Resume</button>
   </a>
 </div>

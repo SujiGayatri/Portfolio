@@ -1,11 +1,11 @@
 .projectContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     /* flex-direction: column; */
-    gap: 20px;
-    padding: 10px;
+    gap: 40px;
+    padding: 40px;
     background-color: #0d1321; 
     /* background-color:#748CAB; */
     height: auto;
@@ -68,11 +68,17 @@
   }
   
   .description {
-    height: 70px;
-    font-size: 16px;
-    margin: 3px 0;
-    color: #748cab; /* Soft Blue */
-  }
+  font-size: 16px;
+  margin: 3px 0;
+  color: #748cab;
+
+  height: 72px;
+  overflow: hidden;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
   
   .techTitle {
     font-size: 18px;
@@ -81,14 +87,17 @@
   }
   
   .technologies {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+
+  overflow: hidden;
+  white-space: nowrap;
+}
   
   .techItem {
     /* background-color: #3e5c76;  */
