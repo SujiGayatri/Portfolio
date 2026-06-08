@@ -63,7 +63,7 @@ const ProjectCard = () => {
               src={project.image}
               alt={project.title}
               className={styles.image}
-            />
+            /> 
           </div>
           <div className={styles.content}>
             <h6 className={styles.title}>{project.title}</h6>

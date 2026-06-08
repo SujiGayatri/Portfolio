@@ -8,11 +8,11 @@ import {
   FaJava,
   FaPython,
   FaReact,
-} from "react-icons/fa"; 
+} from "react-icons/fa";
 import { SiExpress, SiMongodb } from "react-icons/si";
 
 function AboutMe() {
-  const [activeTab, setActiveTab] = useState("skills"); 
+  const [activeTab, setActiveTab] = useState("skills");
 
   const education = [
     {
@@ -29,7 +29,7 @@ function AboutMe() {
       description: "85.6%",
     },
   ];
-  
+
 
   const skills = [
     { name: "HTML", icon: <FaHtml5 className={styles.skillIcon} /> },
@@ -47,27 +47,25 @@ function AboutMe() {
     <div className={styles.container}>
       {/* Left Section */}
       <div className={styles.leftSection}>
-  <h1 className={styles.title}>ABOUT ME</h1>
-  <div className={styles.divider}></div>
-  <p className={styles.description}>
-    Hi! I'm a <span className={styles.highlight}>Full Stack Developer</span> with expertise in building
-    dynamic and <span className={styles.highlight}>responsive web applications</span>. 
-    I am passionate about creating seamless user experiences and constantly 
-    <span className={styles.highlight}> exploring the latest technologies</span>.
-    My expertise includes React, Node.js, and web development technologies.
-    <br />
-    <br />
-    {/* <span className={styles.emphasis}></span>,  */}
-    I thrive on solving challenging problems with innovative solutions and continuously expand my knowledge to stay ahead in the dynamic world of web development.
-</p>
-<div className={styles.resumeButtonContainer}>
-  <a href="https://drive.google.com/file/d/1BsedDxnsHWJeiYVjEo2wdiWHTfFcKrpl/view?usp=sharing">
-    <button className={styles.resumeButton}>Resume</button>
-  </a>
-</div>
-
-
-</div>
+        <h1 className={styles.title}>ABOUT ME</h1>
+        <div className={styles.divider}></div>
+        <p className={styles.description}>
+          Hi! I'm a <span className={styles.highlight}>Full Stack Developer</span> with expertise in building
+          dynamic and <span className={styles.highlight}>responsive web applications</span>.
+          I am passionate about creating seamless user experiences and constantly
+          <span className={styles.highlight}> exploring the latest technologies</span>.
+          My expertise includes React, Node.js, and web development technologies.
+          <br />
+          <br />
+          {/* <span className={styles.emphasis}></span>,  */}
+          I thrive on solving challenging problems with innovative solutions and continuously expand my knowledge to stay ahead in the dynamic world of web development.
+        </p>
+        <div className={styles.resumeButtonContainer}>
+          <a href="https://drive.google.com/file/d/1BsedDxnsHWJeiYVjEo2wdiWHTfFcKrpl/view?usp=sharing">
+            <button className={styles.resumeButton}>Resume</button>
+          </a>
+        </div>
+      </div>
 
 
       {/* Right Section */}
@@ -75,17 +73,15 @@ function AboutMe() {
         {/* Tab Navigation */}
         <div className={styles.tabNavigation}>
           <button
-            className={`${styles.tabButton} ${
-              activeTab === "skills" ? styles.activeTab : ""
-            }`}
+            className={`${styles.tabButton} ${activeTab === "skills" ? styles.activeTab : ""
+              }`}
             onClick={() => setActiveTab("skills")}
           >
             Skills
           </button>
           <button
-            className={`${styles.tabButton} ${
-              activeTab === "education" ? styles.activeTab : ""
-            }`}
+            className={`${styles.tabButton} ${activeTab === "education" ? styles.activeTab : ""
+              }`}
             onClick={() => setActiveTab("education")}
           >
             Education
@@ -123,4 +119,3 @@ function AboutMe() {
 }
 
 export default AboutMe;
- 
