@@ -1,219 +1,512 @@
-.projectContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    /* flex-direction: column; */
-    gap: 40px;
-    padding: 40px;
-    background-color: #0d1321; 
-    /* background-color:#748CAB; */
-    height: auto;
-  min-height: 100vh;
-  }
-  
-  
-  .card {
-    background-color: #1d2d44; /* Deep Blue */
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    color: #f0ebd8; /* Light Beige */
-    width: 300px;
-    /* height: 450px; */
-    height: fit-content;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .imageContainer {
-    width: 100%;
-    height: 200px;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .content {
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .heading {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #f0ebd8;
-    width: 100%;
-    padding-left: 40px;
-    /* text-transform: uppercase;  */
-    /* position: relative; */
-    /* z-index: 1; */
-  }
-  .title {
-    margin: 0;
-    font-size: 1.5rem;
-    height: 15%;
-    color: #f0ebd8;
-    overflow: hidden;
-    display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  }
-  
-  .description {
-  font-size: 16px;
-  margin: 3px 0;
-  color: #748cab;
+/* ==========================================
+   PROJECT SECTION
+========================================== */
 
-  height: 72px;
-  overflow: hidden;
-
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-  
-  .techTitle {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #f0ebd8; /* Steel Blue */
-  }
-  
-  .technologies {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 8px;
-
-  overflow: hidden;
-  white-space: nowrap;
-}
-  
-  .techItem {
-    /* background-color: #3e5c76;  */
-    color: #748CAB; /* Light Beige */
-    padding: 2px;
-    /* border-radius: 5px; */
-    font-size: 15px;
-  }
-  @media (max-width: 1024px) {
-    .projectContainer {
-      justify-content: space-evenly;
-      gap: 15px;
-      height: fit-content;
-    }
-  
-    .card {
-      width: 300px;
-      height: auto;
-    }
-  
-    .description {
-      height: auto;
-      font-size: 14px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .projectContainer {
-      flex-direction: column;
-      /* align-items: center; */
-      height: fit-content;
-    }
-  
-    .card {
-      width: 80%;
-      max-width: 400px;
-      height: auto;
-    }
-  
-    .technologies {
-      justify-content: start;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .projectContainer{
-      height: fit-content;
-    }
-    .card {
-      width: 85%;
-      padding: 10px;
-    }
-    .heading {
-      width: 90%;
-      margin-left: 10px;
-      font-size: 1.5rem;
-      text-align: left;
-    }
-  
-    .title {
-      font-size: 20px;
-      margin-bottom: 5px;
-    }
-  
-    .description {
-      font-size: 14px;
-      margin-bottom: 5px;
-    }
-  
-    .techItem {
-      font-size: 13px;
-      margin-bottom: 5px;
-    }
-  }
-  /* Buttons container */
-.buttons {
-  margin-top: 15px;
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+.projectSection{
+    min-height:100vh;
+    background:#0D1321;
+    padding:80px 8%;
 }
 
-/* Base button style */
-.button {
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
+.heading{
+    color:#F0EBD8;
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:50px;
+    letter-spacing:1px;
 }
 
-/* Live Demo button */
-.demoButton {
-  background: linear-gradient(135deg, #0070f3, #00c6ff);
-  color: #fff;
+/* ==========================================
+   GRID
+========================================== */
+
+.projectGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:40px;
+
+    justify-items:center;
+
+    align-items:start;
+
 }
 
-.demoButton:hover {
-  background: linear-gradient(135deg, #005bb5, #009acb);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 112, 243, 0.4);
+/* ==========================================
+   CARD
+========================================== */
+
+.card{
+
+    position:relative;
+
+    width:360px;
+
+    height:330px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    background:linear-gradient(
+        145deg,
+        #1D2D44 0%,
+        #162338 100%
+    );
+
+    border:1px solid rgba(116,140,171,.18);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.25);
+
+    transition:.35s ease;
+
 }
 
-/* GitHub button */
-.githubButton {
-  background: #24292e;
-  color: #fff;
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#748CAB;
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.35),
+        0 0 18px rgba(116,140,171,.15);
+
 }
 
-.githubButton:hover {
-  background: #000;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(36, 41, 46, 0.5);
+/* ==========================================
+   BADGE
+========================================== */
+
+.badge{
+
+    position:absolute;
+
+    top:16px;
+
+    left:16px;
+
+    z-index:10;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    background:#3E5C76;
+
+    color:#F0EBD8;
+
+    font-size:.78rem;
+
+    font-weight:600;
+
+    backdrop-filter:blur(8px);
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.imageContainer{
+
+    position:relative;
+
+    width:100%;
+
+    height:210px;
+
+    overflow:hidden;
+
+    flex-shrink:0;
+
+}
+
+.image{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.45s ease;
+
+}
+
+.card:hover .image{
+
+    transform:scale(1.08);
+
+    filter:brightness(.35);
+
+}
+
+/* ==========================================
+   OVERLAY
+========================================== */
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:10px;
+
+    gap:5px;
+
+    opacity:0;
+
+    background:rgba(13,19,33,.72);
+
+    backdrop-filter:blur(6px);
+
+    transition:.35s ease;
+
+}
+
+.card:hover .overlay{
+
+    opacity:1;
+
+}
+
+/* ==========================================
+   OVERLAY BUTTONS
+========================================== */
+
+.overlayButtons{
+
+    display:flex;
+
+    gap:14px;
+
+}
+
+.liveBtn,
+.githubBtn{
+
+    text-decoration:none;
+
+    color:#F0EBD8;
+
+    padding:11px 18px;
+
+    border-radius:22px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.liveBtn{
+
+    background:#3E5C76;
+
+}
+
+.liveBtn:hover{
+
+    background:#54779C;
+
+    transform:translateY(-2px);
+
+}
+
+.githubBtn{
+
+    background:#24344D;
+
+}
+
+.githubBtn:hover{
+
+    background:#324A68;
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================
+   OVERLAY DESCRIPTION
+========================================== */
+
+.overlayDescription{
+
+    color:#F0EBD8;
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+    text-align:center;
+
+    max-width:90%;
+
+}
+/* ==========================================
+   CONTENT
+========================================== */
+
+.content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    padding:5px 0 0 10px;
+}
+
+.title{
+    color:#F0EBD8;
+    font-size:1.65rem;
+    font-weight:500;
+    margin-bottom:5px;
+    margin-top:5px;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.description{
+
+    color:#9FB3C8;
+
+    font-size:.95rem;
+
+    line-height:1.6;
+
+    display:none;
+
+    -webkit-line-clamp:1;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+
+    margin:5px 0 10px;
+
+}
+
+/* ==========================================
+   TECH STACK
+========================================== */
+
+.techContainer{
+
+    margin-top:5px;
+
+    display:flex;
+
+    flex-wrap:nowrap;
+
+    gap:10px;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    scrollbar-width:none;
+
+    white-space:nowrap;
+
+}
+
+.techContainer::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.tech{
+
+    flex-shrink:0;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    background:#2E4768;
+
+    color:#F0EBD8;
+
+    font-size:.8rem;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.tech:hover{
+
+    background:#476589;
+
+}
+
+/* ==========================================
+   SMOOTH ANIMATION
+========================================== */
+
+.card,
+.image,
+.content,
+.title,
+.description,
+.tech,
+.overlay{
+
+    transition:.35s ease;
+
+}
+
+.card:hover .title{
+
+    transform:translateY(-2px);
+
+}
+
+.card:hover .tech{
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+.projectGrid{
+
+grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+}
+
+.card{
+
+width:340px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.projectSection{
+
+padding:70px 25px;
+
+}
+
+.heading{
+
+font-size:2.4rem;
+
+text-align:center;
+
+}
+
+.card{
+
+width:100%;
+
+max-width:360px;
+
+}
+
+.imageContainer{
+
+height:200px;
+
+}
+
+.overlayButtons{
+
+flex-direction:column;
+
+}
+
+.liveBtn,
+.githubBtn{
+
+width:170px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.projectSection{
+
+padding:60px 18px;
+
+}
+
+.projectGrid{
+
+grid-template-columns:1fr;
+
+}
+
+.heading{
+
+font-size:2rem;
+
+}
+
+.card{
+
+max-width:100%;
+
+height:450px;
+
+}
+
+.title{
+
+font-size:1.45rem;
+
+}
+
+.description{
+
+font-size:.9rem;
+
+}
+
+.overlayDescription{
+
+font-size:.9rem;
+
+line-height:1.5;
+
+}
+
 }
